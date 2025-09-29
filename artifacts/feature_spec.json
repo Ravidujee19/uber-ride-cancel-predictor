@@ -1,0 +1,13 @@
+{
+  "numeric": [
+    "hour",
+    "dayofweek",
+    "is_weekend"
+  ],
+  "categorical": [
+    "Vehicle Type",
+    "Payment Method"
+  ],
+  "target": "is_cancelled",
+  "note": "Minimal pre-booking features; ensembles (soft-voting & stacking)"
+}

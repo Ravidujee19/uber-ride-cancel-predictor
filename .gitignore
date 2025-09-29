@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Streamlit
+.streamlit/cache/
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+
+# Artifacts 
+artifacts/models/*.pkl
+artifacts/models/metrics.json
+

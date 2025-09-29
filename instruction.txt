@@ -1,0 +1,26 @@
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+
+
+Train the model
+python scripts/train.py
+# outputs:
+# artifacts/models/preprocessor.pkl
+# artifacts/models/model_rf.pkl
+# artifacts/models/metrics.json
+# artifacts/feature_spec.json
+
+
+Streamlit app
+streamlit run app.py
+
+
+CLI prediction
+python src/predict.py --json inputs.json --proba
+
+
+If want to use Docker
+docker build -t ride-cancel-app .
+docker run -p 8501:8501 ride-cancel-app
+
