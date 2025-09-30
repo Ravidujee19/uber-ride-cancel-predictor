@@ -1,4 +1,4 @@
-# 🚕 Uber Ride Cancellation Predictor (Ensemble)
+# 🚕 Uber Ride Cancellation Predictor
 
 Predict the probability that a ride will be **cancelled** using **pre-booking** information only (to avoid post-ride leakage).  
 The project includes data prep, modeling, **multi-model ensembles** (soft-voting + stacking), packaging as a single sklearn **pipeline**, a CLI for batch/single predictions, and a Streamlit demo.
@@ -44,7 +44,6 @@ uber-ride-cancel-predictor/
 ├─ inputs.json                   # example request(s) for CLI
 ├─ app.py                        # Streamlit demo
 ├─ requirements.txt
-├─ Makefile
 ├─ Dockerfile
 └─ .gitignore
 ```
