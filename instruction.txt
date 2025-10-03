@@ -13,11 +13,8 @@ python scripts/train.py
 
 
 Streamlit app
-streamlit run app.py
-
-
-CLI prediction
-python src/predict.py --json inputs.json --proba
+streamlit run app.py --server.port 8501
+streamlit run dev_app.py --server.port 8502 # for the dev
 
 
 If want to use Docker
