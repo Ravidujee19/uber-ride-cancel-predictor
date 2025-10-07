@@ -14,4 +14,7 @@ __pycache__/
 # Artifacts 
 artifacts/models/*.pkl
 artifacts/models/metrics.json
+artifacts/feature_spec.json
 
+# Csv File
+data/*.csv
