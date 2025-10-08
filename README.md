@@ -34,14 +34,14 @@ uber-ride-cancel-predictor/
 │  │  └─ metrics.json            # per-model metrics + winner
 │  └─ feature_spec.json          # feature schema for reference
 ├─ data/
-│  └─ ncr_ride_booking.csv       # dataset
+│  └─                            # dataset (https://www.kaggle.com/datasets/yashdevladdha/uber-ride-analytics-dashboard)
 ├─ scripts/
 │  └─ train.py                   # trains all models + ensembles
 ├─ src/
 │  └─ predict.py                 # CLI predictions via saved pipeline
 ├─ .streamlit/
 │  └─ config.toml                # UI theme for Streamlit
-├─ inputs.json                   # example request(s) for CLI
+├─ inputs.json                   # example request for CLI
 ├─ app.py                        # Streamlit demo
 ├─ requirements.txt
 ├─ Dockerfile
@@ -120,11 +120,6 @@ Features:
 - Single prediction form (Date/Time, Vehicle Type, Payment Method)
 - Batch upload (CSV) → download predictions
 - Best effort **feature importance** view (tree/linear models; ensembles averaged when possible)
-
-If artifacts aren’t found, train first:
-```bash
-python scripts/train.py
-```
 
 ---
 
